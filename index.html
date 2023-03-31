@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>if ((localStorage.getItem('firstVisit') === null) && (localStorage.getItem('skip') === null)) {location.href = "welcome.html";localStorage.setItem('firstVisit', 'visited');}</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+	<title>iLoveV3 | Special for GenZ</title>
+	<meta name="theme-color" content="#ffffff">
+	<meta name="application-name" content="iLoveV3"/>
+	<link rel="icon" href="/assets/images/favicon.png">
+	<meta content='/assets/images/bg.jpg' property='og:image' />
+	<link rel="manifest" href="manifest.json">
+	<meta name="description" content="Một chiếc webapp đặc biệt dành riêng cho các bạn học sinh trường Vinh3 Lê Viết Thuật">
+	<meta content='Một chiếc webapp đặc biệt dành riêng cho các bạn học sinh trường Vinh3 Lê Viết Thuật' property='og:description' />
+	<link rel="stylesheet" href="vendor/swiper/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+	<div class="body-overlay"></div>
+	<div id="panel-left"></div>
+	<div class="page page--main" data-page="main">
+		<header class="header header--page header--fixed">
+			<div class="header__inner">
+				<div class="header__icon header__icon--menu open-panel" data-panel="left">
+					<span></span><span></span><span></span><span></span><span></span><span></span></a></div>
+				<div class="header__logo header__logo--text"><a href="#">iLove<strong>V3</strong></a></div>
+				<div class="header__icon open-popup" data-popup="social"><img src="assets/images/icons/connect.svg"/></div>
+			</div>
+		</header>
+		<div class="page__content page__content--with-header page__content--with-bottom-nav">
+			<h2 class="page__title">Welcome</h2>
+			<p class="welcome">
+				Một chiếc Webapp đặc biệt dành riêng cho các bạn học sinh trường Vinh3 - Lê Viết Thuật<br>
+			</p>
+			<h3>Khám phá ngay các chức năng nào</h3>
+			<div class="cards cards--11" id="downNoti" style="display: none;">
+				<div class="card card--style-icon card--style-round-corners">
+					<a href="#" onclick="installApp()">
+						<div class="card__icon card__icon--centered"><img src="assets/images/icons/download.svg"></div>
+						<h4 class="card__title card__title--centered">Tap to Install App</h4>
+					</a>
+				</div>
+			</div>
+			<div class="cards cards--12">
+				<div class="card card--style-icon card--style-round-corners">
+					<div class="card__icon"><a href="/pages/utilities/calculator.html"><img src="assets/images/icons/calculator.svg"/></a></div>
+					<h4 class="card__title">Calculator</h4>
+					<p class="card__text">Công cụ tính điểm tốt nghiệp THPT</p>
+					<div class="card__top-right-info">
+						<div class="card__more"><a href="/pages/utilities/calculator.html"><img src="assets/images/icons/more.svg"/></a></div>
+					</div>
+				</div>
+				<div class="card card--style-icon card--style-round-corners">
+					<div class="card__icon"><a href="/pages/pages/dai-hoc.html"><img src="assets/images/icons/university.svg"/></a></div>
+					<h4 class="card__title">UniLookup</h4>
+					<p class="card__text">Tra cứu trường, điểm chuẩn Đại học & Học viện</p>
+					<div class="card__top-right-info">
+						<div class="card__more"><a href="/pages/pages/dai-hoc.html"><img src="assets/images/icons/more.svg"/></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="cards cards--11">
+				<div class="card card--style-inline card--style-inline-bg card--style-round-corners">
+					<div class="card__icon"><a href="/pages/pages/nganh-hoc.html"><img src="assets/images/icons/book.svg"/></a></div>
+					<div class="card__details">
+						<h4 class="card__title">Majors Lookup</h4>
+						<p class="card__text">Tìm kiếm ngành đào tạo tại các trường Đại học & Học viện</p>
+					</div>
+					<div class="card__more"><a href="/pages/pages/nganh-hoc.html"><img src="assets/images/icons/more.svg"/></a></div>
+				</div>
+			</div>
+			<h4>Các tiện ích khác</h4>
+			<div class="cards cards--11">
+				<div class="card card--style-inline card--style-inline-bg card--style-round-corners">
+					<div class="card__icon"><a href="/pages/utilities/qr.html"><img src="assets/images/icons/qr.svg"/></a></div>
+					<div class="card__details">
+						<h4 class="card__title">QR Code Generator</h4>
+						<p class="card__text">Online QR Code Generator to make your own QR Codes</p>
+					</div>
+					<div class="card__more"><a href="/pages/utilities/qr.html"><img src="assets/images/icons/more.svg"/></a></div>
+				</div>
+				<div class="card card--style-inline card--style-inline-bg card--style-round-corners">
+					<div class="card__icon"><a href="/pages/utilities/otp.html"><img src="assets/images/icons/authen.svg"/></a></div>
+					<div class="card__details">
+						<h4 class="card__title">2FA Generator</h4>
+						<p class="card__text">Get 2FA code for Facebook, Google, Binance,...</p>
+					</div>
+					<div class="card__more"><a href="/pages/utilities/otp.html"><img src="assets/images/icons/more.svg"/></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bottom-toolbar" class="bottom-toolbar">
+		<div class="bottom-navigation">
+			<div class="swiper-container-toolbar swiper-toolbar">
+				<div class="bottom-navigation__pagination"></div>
+					<div class="swiper-wrapper">
+				 	<div class="swiper-slide">
+						<ul class="bottom-navigation__icons">
+							<li><a href="/"><img src="assets/images/icons/home.svg"/><span>Home</span></a></li>
+							<li><a href="/pages/utilities/calculator.html"><img src="assets/images/icons/calculator.svg"/><span>Calculator</span></a></li>
+							<li><a href="/pages/pages/dai-hoc.html"><img src="assets/images/icons/uni.svg"/><span>Univ.</span></a></li>
+						</ul>
+					</div> 
+				</div>
+			 </div>
+		</div>
+	</div>
+	<div id="popup-alert"></div>
+	<div id="popup-social"></div>
+	<div id="popup-about"></div>
+	<script src="vendor/jquery/jquery-3.5.1.min.js"></script>
+	<script src="vendor/jquery/jquery.validate.min.js"></script>
+	<script src="vendor/swiper/swiper.min.js"></script>
+	<script src="js/jquery.custom.js"></script>
+	<script src="js/pwa.js"></script>
+</body>
+</html>

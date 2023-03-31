@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+    <title>Tra cứu trường Đại học & Học viện | iLoveV3</title>
+    <link rel="icon" href="../../assets/images/favicon.png">
+    <meta content='../../assets/images/uni.jpg' property='og:image' />
+    <link rel="stylesheet" href="../../vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="../../css/font.css" rel="stylesheet">
+</head>
+<body>
+    <div class="body-overlay"></div>
+    <div id="panel-left"></div>
+    <div class="page page--main" data-page="form">
+        <header class="header header--page header--fixed">
+            <div class="header__inner">
+                <div class="header__icon"><a href="/"><img src="../../assets/images/icons/arrow-back.svg"/></a></div>
+                <div class="header__logo header__logo--text"><a href="#">Tuyển sinh <strong>Đại học</strong></a></div>
+                <div class="header__icon header__icon--empty-space"></div>
+            </div>
+        </header>
+        <div class="page__content page__content--with-header">
+            <h2 class="page__title">Tra cứu điểm chuẩn các trường Đại học và Học viện</h2>
+            <p class="welcome">
+                Chúc các sĩ tử 2k5 chọn được một ngôi trường phù hợp nhất cho riêng mình và đạt được kết quả tốt nhất trong kỳ thi THPT 2023
+            </p>
+            <div class="fieldset">
+                <div class="form">
+                    <div class="form__row">
+						<input type="text" class="form__input" placeholder="Nhập tên trường/mã trường/tỉnh thành..." oninput="search(this.value)">
+					</div>
+                </div>
+            </div>
+            <div class="table table--2cols mb-20" id="export"></div>
+            <div class="entry">
+                <h2>Một số thông tin cần lưu ý</h2>
+                <p><b><i>Mã trường</i></b> khác với <i><b>tên viết tắt</i></b> của trường bạn nhé, cụ thể:</p>
+                <ul class="custom-listing custom-listing--checked mb-20">
+                    <li>Đại học Bách Khoa Hà Nội có tên viết tắt là <b><i>HUST</i></b></li>
+                    <li>Tuy nhiên mã trường Bách Khoa Hà Nội lại là <b><i>BKA</i></b></li>
+                    <li>Mã trường sẽ chỉ có duy nhất 3 ký tự (Không bao gồm các ký tự đặc biệt)</li>
+                </ul>
+                <p>Một số lưu ý nhỏ khác</p>
+                <ul class="custom-listing custom-listing--checked mb-20">
+                    <li>Vì server là <b><i>free</i></b> nên sẽ có lúc sẽ bị lag</li>
+                    <li>Nếu lúc xem điểm mà chưa thấy Kết quả thì các bạn đợi một tý</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/daiHoc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+    <title>OTP Generator | iLoveV3</title>
+    <link rel="icon" href="../../assets/images/favicon.png">
+    <meta content='../../assets/images/bg.jpg' property='og:image' />
+    <link rel="stylesheet" href="../../vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="../../css/font.css" rel="stylesheet">
+</head>
+<body>
+    <div class="body-overlay"></div>
+    <div id="panel-left"></div>
+    <div class="page page--main" data-page="form">
+        <header class="header header--page header--fixed">
+            <div class="header__inner">
+                <div class="header__icon"><a href="/"><img src="../../assets/images/icons/arrow-back.svg"/></a></div>
+                <div class="header__logo header__logo--text"><a href="#">OTP <strong>Generator</strong></a></div>
+                <div class="header__icon header__icon--empty-space"></div>
+            </div>
+        </header>
+        <div class="page__content page__content--with-header">
+            <h2 class="page__title">OTP Generator</h2>
+            <p class="welcome">
+                Tạo mã OTP (2FA) một cách nhanh chóng<br>⚠ Lưu ý: Nhấn Enter để hiển thị OTP code
+            </p>
+            <div class="fieldset">
+                <div class="form">
+                    <div class="form__row">
+						<input type="text" class="form__input" placeholder="Input you Secret Key" onchange="getOTP(this)">
+					</div>
+                    <div class="form__row">
+						<input type="text" class="form__input" id="otp" disabled>
+					</div>
+                    <div class="form__row mt-40">
+                        <input type="button" onclick="copyText('otp')" class="form__submit button button--main button--full" value="COPY OTP" />
+                    </div>
+                </div>
+            </div>
+            <h2>Mã OTP hay 2FA là gì?</h2>
+            <p>2FA hay còn gọi là xác thực 2 yếu tố là phương pháp bảo mật quản lý truy cập và danh tính yêu cầu hai hình thức nhận dạng để truy nhập tài nguyên và dữ liệu</p>
+            <p>Ưu điểm của 2FA là vô tận. Các doanh nghiệp sử dụng 2FA để giúp bảo vệ tài nguyên doanh nghiệp và tài nguyên cá nhân của nhân viên.</p>
+            <p>Bạn có thể tự tìm hiểu thêm cách sử dụng 2FA <a target="_blank" href="https://nguyenduchoang.repl.co/sd2fa">tại đây</a></p>
+        </div>
+    </div>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/pwa.js"></script>
+</body>
+</html>

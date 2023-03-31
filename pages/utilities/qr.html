@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+    <title>QR Code Generator | iLoveV3</title>
+    <link rel="icon" href="../../assets/images/favicon.png">
+    <meta content='../../assets/images/bg.jpg' property='og:image' />
+    <link rel="stylesheet" href="../../vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="../../css/font.css" rel="stylesheet">
+</head>
+<body>
+    <div class="body-overlay"></div>
+    <div id="panel-left"></div>
+    <div class="page page--main" data-page="form">
+        <header class="header header--page header--fixed">
+            <div class="header__inner">
+                <div class="header__icon"><a href="/"><img src="../../assets/images/icons/arrow-back.svg"/></a></div>
+                <div class="header__logo header__logo--text"><a href="#">QR Code <strong>Generator</strong></a></div>
+                <div class="header__icon header__icon--empty-space"></div>
+            </div>
+        </header>
+        <div class="page__content page__content--with-header">
+            <h2 class="page__title">QR Code Generator</h2>
+            <p class="welcome">
+                Tạo mã QR một cách nhanh chóng<br>⚠ Lưu ý: Nhấn Enter để hiển thị mã QR
+            </p>
+            <div class="fieldset">
+                <div class="form">
+                    <div class="form__row">
+						<input type="text" class="form__input" placeholder="Input you content" onchange="genQR(this)">
+					</div>
+
+                    <ul id="displayQR" class="photo-gallery photo-gallery--11"></ul>
+
+                    <div class="form__row mt-40">
+                        <input type="button" onclick="downQR()" class="form__submit button button--main button--full" value="DOWNLOAD QR" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/pwa.js"></script>
+</body>
+</html>
