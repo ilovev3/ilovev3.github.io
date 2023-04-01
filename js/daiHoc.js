@@ -40,11 +40,7 @@ function find(data, keyWord) {
 function search(inputValue) {
 	let html = '';
 	let result = [];
-	if (inputValue) {
-		result = find(data, inputValue);
-	} else {
-		result = data;
-	}
+	result = inputValue ? find(data, inputValue) : data;
 	for (let i = 0; i < result.length; i++) {
 		html += `<a style="color: #000" href="diem-chuan.html?name=${result[i][1]}&url=${result[i][2]}${result[i][0]}.html">
 			<div class="table__row">
